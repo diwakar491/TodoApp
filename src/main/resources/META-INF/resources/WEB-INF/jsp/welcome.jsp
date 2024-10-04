@@ -1,12 +1,11 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Welcome</title>
-</head>
-<body>
-        <div>LoggedIn SuccessFully ${name}</div>
-        <div>your password is ${pass}</div>
-        <a href="/list-todos">Manage todos</a>
+<%@ include file = "common/header.jspf" %>
+<%@ include file = "common/navigation.jspf" %>
+  <div class= "container">
+    <h1>Welcome ${name}</h1>
+    <a href="/list-todos">Manage Todos</a>
+  </div>
+
+<%@ include file = "common/footer.jspf" %>
+
 </body>
 </html>
